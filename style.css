@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*Hauteur de 100vh pour centrer sur la page*/
+    background-color: #17f;
+}
+section { /*Eléments autour de connexion*/
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 400px; /*largeur de 400px de la section*/
+    border-radius: 6px; /*coté arrondi du fond blanc*/
+}
+section h1 {
+    text-align: center; /*Centrer le titre au milieu de la section*/
+}
+form { /*Eléments du formulaire*/
+    display: flex;
+    flex-direction: column;
+}
+form input {
+    margin: 5px 0; /*Margin entre chaque input donc chaque case a remplir*/
+    padding: 5px 5px;
+    outline: 0; 
+    border: 1px solid #000; /*bordure autour des input*/
+    border-radius: 6px;
+}
+form input[type='submit'] { /*Bouton envoyer*/
+    background-color: #17f;
+    border: 0; /*permet d'enlever la bordure mise précédemment sur les autres éléments*/
+    color: #fff; /*couleur du texte*/
+    margin-top: 15px; /*marge au dessus pour créer un épuré l'espace*/
+    padding: 6px 0; /*padding dans le bouton pour le grossir*/
+}
+.Erreur {
+    color: red;
+    margin: 10px 0;
+    text-align: center;
+}
+.message {
+    color: #fff;
+    font-size: 25px;
+}
